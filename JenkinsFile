@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        DOCKER_IMAGE_NAME = "dahitsahadev/node-argocd"
+        DOCKER_IMAGE_NAME = "lnahuel/node-argocd"
         DOCKER_IMAGE_TAG = "${env.BUILD_NUMBER}"
     }
         
@@ -11,7 +11,7 @@ pipeline {
             steps {
                 // Checkout the source code from your Git repository
                 git branch: 'main',
-                url: 'https://github.com/SahadevDahit/CICI-jenkins-helm-argocd.git'
+                url: 'https://github.com/lnahuel1991/CICD-jenkins-helm-argocd.git'
             }
         }
  
