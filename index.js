@@ -6,7 +6,7 @@ const app = express();
 
 app.get('/', (req, res) => {
     res.json({
-        message: 'Modificando el mensaje 0.1!'
+        message: 'Modificando el mensaje 0.2!'
     });
 
 
